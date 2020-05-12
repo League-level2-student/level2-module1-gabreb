@@ -22,20 +22,23 @@ public class IntroToArrayLists {
 		}
 		//4. Print all the Strings using a for-each loop
 				
-				for (int i = stuff.size(); i > 0; i--) {
+		for (int i = stuff.size()-1; i >= 0; i--) {
+			System.out.println(stuff.get(i));
+		}
+		
+		//6. Print all the Strings in reverse order.
+		//5. Print only the even numbered elements in the list.
+				for (int i = 0; i <= stuff.size()-1; i++) {
+					if ((i%2)==0) {
 					System.out.println(stuff.get(i));
+					}
 				}
-				
-				//6. Print all the Strings in reverse order.
-				//5. Print only the even numbered elements in the list.
-						for (int i = 0; i < stuff.size(); i++) {
-							if ((i/2)==0) {
-							System.out.println(stuff.get(i));
+				for (int i = 0; i <= stuff.size()-1; i++) {
+					if (stuff.get(i).contains("e")==true) {
+					System.out.println(stuff.get(i));
+					}
 							}
-						}
-				//7. Print only the Strings that have the letter 'e' in them.
-						for (int i = 0; i < stuff.size(); i++) {
-							System.out.println(stuff.get(i).charAt(i));
-									}
+		//7. Print only the Strings that have the letter 'e' in them.
+				
 	}
 }
